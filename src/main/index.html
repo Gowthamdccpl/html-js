@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>DevOps — Overview</title>
+        <meta name="description" content="A concise, beginner-friendly overview of DevOps: principles, practices and tools." />
+            <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div>
+                    <h1>DevOps — A concise overview</h1>
+                    <p class="muted">Bridging development and operations for faster, safer software delivery.</p>
+                </div>
+                <div class="pill">Practical · Modern · Collaborative</div>
+            </header>
+
+            <main class="grid">
+                <section class="card">
+                    <h2>What is DevOps?</h2>
+                    <p class="muted small">DevOps is a set of practices and cultural philosophies that aim to shorten the systems development life cycle and provide continuous delivery with high software quality. It emphasizes collaboration between development, operations, and other stakeholders.</p>
+
+                    <h3 style="margin-top:14px">Core principles</h3>
+                    <ul>
+                        <li><strong>Collaboration:</strong> Cross-functional teams share responsibility and communicate frequently.</li>
+                        <li><strong>Automation:</strong> Automate builds, tests, and deployments to reduce manual errors.</li>
+                        <li><strong>Continuous Improvement:</strong> Measure performance, collect feedback, and iterate.</li>
+                        <li><strong>Infrastructure as Code:</strong> Treat configuration and infrastructure declaratively and version them.</li>
+                        <li><strong>Observability:</strong> Monitor logs, metrics and traces to understand system behavior.</li>
+                    </ul>
+
+                    <h3 style="margin-top:14px">Common practices</h3>
+                    <ul>
+                        <li>Continuous Integration (CI): merge frequently and validate via automated tests.</li>
+                        <li>Continuous Delivery/Deployment (CD): make releases repeatable and fast.</li>
+                        <li>Trunk-based development, feature flags and blue/green or canary deployments.</li>
+                        <li>Automated testing (unit, integration, end-to-end) and security scanning.</li>
+                    </ul>
+                </section>
+
+                <aside class="card">
+                    <h2>Popular tools</h2>
+                    <ul class="tools muted small">
+                        <li><strong>CI/CD:</strong> GitHub Actions, GitLab CI, Jenkins, CircleCI</li>
+                        <li><strong>Containerization:</strong> Docker, Podman</li>
+                        <li><strong>Orchestration:</strong> Kubernetes, Nomad</li>
+                        <li><strong>Infra as Code:</strong> Terraform, Pulumi, CloudFormation</li>
+                        <li><strong>Monitoring:</strong> Prometheus, Grafana, Datadog</li>
+                        <li><strong>Config Mgmt:</strong> Ansible, Chef, Puppet</li>
+                    </ul>
+
+                    <div style="margin-top:12px">
+                        <h3 style="margin:6px 0">Quick CI/CD example</h3>
+                        <p class="muted small">Click to simulate a pipeline run:</p>
+                        <div class="example">
+                            <pre id="pipelineLog">[idle] Ready to run pipeline...</pre>
+                            <div style="margin-top:8px;display:flex;gap:8px">
+                                <button class="btn" id="runBtn">Run pipeline</button>
+                                <button class="btn" id="resetBtn" style="background:#64748b;color:#e6eef6">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </main>
+
+            <section class="card" style="margin-top:12px">
+                <h2>Getting started (minimal checklist)</h2>
+                <ol class="muted small">
+                    <li>Use a VCS (Git) and establish a branching strategy.</li>
+                    <li>Automate builds and tests with a CI pipeline.</li>
+                    <li>Package your app as a container or artifact.</li>
+                    <li>Use IaC to provision environments reproducibly.</li>
+                    <li>Implement monitoring and alerts for production.</li>
+                </ol>
+                <p class="muted small" style="margin-top:8px">Learn by doing: start with a single pipeline that runs tests and builds an artifact — then iterate.</p>
+            </section>
+
+            <footer>
+                <div class="muted">This page is intentionally short. For deeper learning check official docs of the tools listed above and follow hands-on tutorials.</div>
+                <div style="margin-top:8px">Open <code>index.html</code> in your browser to view.</div>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
